@@ -1,6 +1,6 @@
 module Chapter1
   def euclid(m,n)
-    raise "Invalid input." unless (m>0 && n>0 && m>n)
+    raise "Invalid input." unless (m>0 && n>=0 && m>n)
     while n != 0 do
       r = m % n
       m = n
