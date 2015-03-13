@@ -6,6 +6,8 @@ describe Chapter1 do
 
   it "#euclid" do
     euclid(60,24).must_equal 12
+    euclid(24,12).must_equal 12
+    euclid(12,0).must_equal 12
   end
 
   it "#min" do
