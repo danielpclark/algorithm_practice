@@ -25,6 +25,7 @@ module Chapter1
     end
 
     def sieve_of_Eratosthenes(n)
+        arr = arr.group_by {|i| i}
       a = []
             
       (2..n) .each do |p|
@@ -54,14 +55,25 @@ module Chapter1
     end
 
     def middle_school_gcd(m,n)
-      pfm = sieve_of_Eratosthenes(m)
-      pfn = sieve_of_Eratosthenes(n)
-
-      ma, na = [], []
-      [ma,na].each do |f|
-
-      end
+      multiples = lambda { |v|
+        arr = []
+        primes = [sieve_of_Eratosthenes(m), sieve_of_Eratosthenes(n)].min
+        while v != 1
+          if (v % primes.first).eql?(0)
+            arr << primes.first
+            v = v / primes.first
+          else
+            primes.shift
+          end
+        end
+        arr
+      }
+      ma = multiples.(m).group_by {|i| i}
+      na = multiples.(n).group_by {|i| i}
       
+      ma.map {|k,v|
+        na.include?(k) ? [v,na[k]].min : nil
+      }.flatten.compact.inject(:*)
     end
 
   end
