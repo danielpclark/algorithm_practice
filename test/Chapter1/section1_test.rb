@@ -10,12 +10,16 @@ describe Chapter1 do
     euclid(12,0).must_equal 12
   end
 
-  it "#min" do
-    min(60, 24).must_equal 12
+  it "#consecutive_integer_checking_gcd" do
+    consecutive_integer_checking_gcd(60, 24).must_equal 12
   end
 
   it "#sieve_of_Eratosthenes" do
     sieve_of_Eratosthenes(100).must_equal [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97]
+  end
+
+  it "#middle_school_gcd" do
+    middle_school_gcd(60,24).must_equal 12
   end
 
 end

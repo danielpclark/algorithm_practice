@@ -10,7 +10,7 @@ module Chapter1
       return m
     end
 
-    def min(m,n,c=nil)
+    def consecutive_integer_checking_gcd(m,n,c=nil)
       unless c
         raise "Invalid input." unless (m>0 && n>0)
         m,n = [m,n].sort { n <=> m }
@@ -20,7 +20,7 @@ module Chapter1
         return c
       else
         c = c - 1
-        min(m,n,c)
+        consecutive_integer_checking_gcd(m,n,c)
       end
     end
 
@@ -52,6 +52,18 @@ module Chapter1
       end
       return l
     end
+
+    def middle_school_gcd(m,n)
+      pfm = sieve_of_Eratosthenes(m)
+      pfn = sieve_of_Eratosthenes(n)
+
+      ma, na = [], []
+      [ma,na].each do |f|
+
+      end
+      
+    end
+
   end
 end
 
