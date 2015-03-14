@@ -25,7 +25,6 @@ module Chapter1
     end
 
     def sieve_of_Eratosthenes(n)
-        arr = arr.group_by {|i| i}
       a = []
             
       (2..n) .each do |p|
