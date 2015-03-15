@@ -70,9 +70,9 @@ module Chapter1
       ma = multiples.(m).group_by {|i| i}
       na = multiples.(n).group_by {|i| i}
       
-      ma.map {|k,v|
+      ma.flat_map {|k,v|
         na.include?(k) ? [v,na[k]].min : nil
-      }.flatten.compact.inject(:*)
+      }.compact.inject(:*)
     end
 
   end

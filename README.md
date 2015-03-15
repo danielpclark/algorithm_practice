@@ -1,5 +1,5 @@
 # Algorithm Practice
-Practicing examples from "Introduction to The Design &amp; Analysis of Algorithms"
+Practicing examples from "Introduction to The Design &amp; Analysis of Algorithms" by Anany Levitin
 
 I'm following the examples provided in the book.  If pseudo code is presented I
 write it in Ruby in the exact same form it is presented.  If only the steps are provided
