@@ -1,0 +1,8 @@
+[package]
+name = "section1"
+version = "1.0.0"
+
+[lib]
+
+[dependencies]
+array_tool = "0.4.1"

@@ -1,0 +1,14 @@
+[root]
+name = "section1"
+version = "1.0.0"
+dependencies = [
+ "array_tool 0.4.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "array_tool"
+version = "0.4.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[metadata]
+"checksum array_tool 0.4.1 (registry+https://github.com/rust-lang/crates.io-index)" = "1a07ccb27c611e5cda99e498e99ba71b3ecdb7db5df02096cef42a3df5b84542"
